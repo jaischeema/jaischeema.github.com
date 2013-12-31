@@ -1,0 +1,16 @@
+<% wrap_layout :layout do %>
+  <article>
+    <div class="title">
+      <h2><%= current_article.title %></h2>
+    </div>
+    <div class="content">
+      <%= yield %>
+    </div>
+    <div class="meta">
+      <h4>
+        Posted on <%= current_article.date.strftime("%-d-%b-%Y") %>
+        <%= article_tags(current_article) %>
+      </h4>
+    </div>
+  </article>
+<% end %>

@@ -1,0 +1,135 @@
+$normalFontFamily: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$fancyFontFamily: Adelle, $normalFontFamily;
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-family: $normalFontFamily;
+}
+
+.header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header h1 {
+  font-family: $fancyFontFamily;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+  font-weight: 300;
+
+  a {
+    color: #444;
+
+    &:hover {
+      color: #2b7baa;
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  height: 40px;
+}
+
+#twitter-follow-header {
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Home page */
+
+.headline {
+  margin-top:40px;
+  p {
+    font-family: $fancyFontFamily;
+    font-size: 17px;
+    font-weight: 300;
+    color: #555;
+  }
+}
+
+.section {
+  margin-top: 60px;
+  h3 {
+    font-family: $fancyFontFamily;
+    font-weight: 300;
+    font-size: 22px;
+    color: #333;
+  }
+
+  ul {
+    padding-left: 0px;
+    list-style: none;
+    li {
+      margin-top: 25px;
+      font-family: $fancyFontFamily;
+      font-weight: 400;
+      font-size: 17px;
+
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: #2b7baa;
+        }
+      }
+    }
+  }
+}
+
+article {
+  .title {
+    h2 {
+      font-weight: 300;
+      font-family: $fancyFontFamily;
+      font-size: 23px;
+      margin: 40px auto 30px;
+    }
+  }
+
+  .content {
+    line-height: 2;
+    font-family: $normalFontFamily;
+    font-weight: 200;
+    font-size: 18px;
+
+    h2, h3, h4, h5 {
+      font-weight: 200;
+    }
+
+    h2 { font-size: 24px; }
+    h3 { font-size: 22px; }
+  }
+
+  .meta {
+    border-top: 1px solid gainsboro;
+    padding-top: 20px;
+    margin-top: 30px;
+    h4 {
+      font-weight: 200;
+      color: #888;
+      font-family: $fancyFontFamily;
+    }
+  }
+}
+
+b, strong
+{
+  font-weight: 600;
+}

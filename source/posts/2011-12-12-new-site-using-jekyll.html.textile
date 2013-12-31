@@ -1,0 +1,46 @@
+---
+layout: post
+title: New site powered by Jekyll
+tags: [programming, design, jekyll]
+---
+
+Update <code>2013-11-18</code>: Since this post, I have started using "middleman":middleman. It has all the goods things plus better inbuilt support for <code>SCSS</code> and <code>CoffeeScript</code>.
+
+<hr/>
+
+I have been trying to blog using Wordpress and the time between subsequent posts have been pretty long. This is partially my laziness and partially some other commitments that have gathered over the time. Though one reason that is not so much evident is the lack of a simple way of writing a blog post. I like to classify myself as a programmer ( big surprise ), so I have gotten used to writing up things in VIM and in fact lately it has become tolerable and I don't have to bang my head against the desk and move to some IDE. So coming back to the problem, I was looking for some way of writing my posts in a text editor and having some way of posting them from the command line rather than having to go to the Wordpress admin console. During that time I was working on a static page generation for "my company's":cybersecure new website and there I met, "Markdown":markdown. I implemented a basic static site generator using "Markdown":markdown and "rails":rails templates and it was good enough for us. This gave the idea to write my own blog site using markdown and then I started searching around and found the perfect project. Meet "Jekyll":jekyll.
+
+"Jekyll":jekyll is a static site generator in which you write all your posts in some markup language e.g. "Markdown":markdown or "Textile":textile. Then you will need to define some layouts and it will generate the static HTML pages for your site. It is highly customisable and there are tons of sites who are using it and the best thing, most of them have open-sourced their code as well. This means that anything crazy you can think of, using "HAML":haml for markup, using "SASS":sass for better CSS, or using some third party or your own markup language is very easy. It is also very fast because all the content is static content, which means if you have a nginx server running as your web server, you are going to be serving pages at crazy rate without even taking any load. The lack of static content means you won't be able to integrate user comments without javascript. If you want comments, then you are in luck as well. "Disqus":disqus is a javascript based commenting engine which can be easily integrated into your static pages.
+
+I could have went on and on about all the features of "Jekyll":jekyll but I would like to highlight some points, specifically why I made this change.
+
+h2. Command line and Text editor tools
+
+As I have written in first part of this post, everything about "Jekyll":jekyll is either command line or text-based. I mainly use VIM/TextMate/Sublime Text 2 for all of my web programming and normal text editing and as it happens. they are all you need. I designed this site in VIM, writing this post in TextMate and going forward will keep on doing this. I don't have to login to some admin section of my site and worry about how the blog post looks, ultimately I am just worried about the content I am putting in there.
+
+h2. Static content
+
+"Jekyll":jekyll generates static html pages for each of your post and this makes your site very fast and improves the load times by large factors. This will not be true for people who are using too much graphic stuff for their sites but for a blog, I feel the minimal design along with static content can provide with best reading experience and ultimate performance.
+
+h2. Easy to configure.
+
+Have you ever tried to make a Wordpress theme? If not, then you will need to try it and know it for yourself but here is a quick hint. IT IS FREAKING HARD. I know this is not fair considering Wordpress is a full blown platform and not just some blogging engine. It's complexity stems from it's features. But in reality, do I really need those features for a simple blog? The answer is no. With this new site, I have my layout in a simple html file with minimal placeholders and it can changed and inherited in other layouts as well. When I am writing a theme, I don't have to worry about Wordpress loops and having 20 files which somehow make into one theme, which is most of the times just used for a blog. If you were hiring a designer to design your blog, you will be paying more for Wordpress integration rather than the design itself.
+
+h2. Hosted on Github
+
+Killer feature! You can host your site on Github, free of charge, under your own domain name or a subdomain. How awesome is that? Every time you make an update, add a new post and you push to your repository which is hosted on Github, they will generate the static site for your repository and make it available within minutes, actually it has been seconds till now but I don't want someone to criticise them for being late even when they are providing this service free of charge. It is the best option for a small blog with reasonable amount of visitors.
+
+I have been using this setup for only a short time, but I am just loving it. It is not for people who are not comfortable with command line stuff and don't know a first thing about git and Github, but it is well worth getting to know these things to come here. Give it a try and see how it changes the way you blog.
+
+
+[cybersecure]http://www.cybersecure.com.au
+[markdown]http://daringfireball.net/projects/markdown/
+[textile]http://www.textism.com/tools/textile/index.php
+[jekyll]https://github.com/mojombo/jekyll
+[source]https://github.com/jaischeema/www.jaischeema.com
+[haml]http://haml-lang.com/
+[sass]http://sass-lang.com/
+[rails]http://www.rubyonrails.com/
+[github]https://github.com/
+[disqus]http://disqus.com/
+[middleman]http://middlemanapp.com/

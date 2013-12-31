@@ -1,0 +1,27 @@
+---
+title: Jais Cheema
+---
+
+<div class="headline">
+  <p>i make software at <a href="http://trikeapps.com">trikeapps</a>, am an avid reader and a very casual cricketer.</p>
+</div>
+
+<div class="section">
+  <h3>online presence:</h3>
+  <ul>
+    <li><a href="http://facebook.com/jais.cheema">facebook for interactions</a></li>
+    <li><a href="http://twitter.com/jaischeema">twitter for trends</a></li>
+    <li><a href="http://github.com/jaischeema">github for code</a></li>
+    <li><a href="mailto:i@jaischeema.com">email for business</a></li>
+    <li><a href="http://plus.google.com/jaischeema">google+ for sake of it</a></li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>some things i have written about:</h3>
+  <ul>
+    <% page_articles.each_with_index do |article, i| %>
+      <li><%= link_to article.title, article %> <span class="pull-right"><%= article.date.strftime("%d-%b-%y") %></span></li>
+    <% end %>
+  </ul>
+</div>
