@@ -1,0 +1,4 @@
+---
+slug: opinion
+name: Opinion
+---
