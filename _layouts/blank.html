@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+
+  {% if site.local_fonts %}
+    {% include stylesheet.html path="fonts" %}
+  {% endif %}
+
+  {% if site.blog_theme == "light" %}
+    {% include stylesheet.html path="light" %}
+  {% else %}
+    {% include stylesheet.html path="dark" %}
+  {% endif %}
+</head>
+<body>
+  {{ content }}
+  {% include javascripts.html %}
+</body>
+</html>

@@ -44,6 +44,7 @@ $ionicon-social-github: "\f233";
 $ionicon-social-linkedin: "\f239";
 $ionicon-social-rss: "\f23d";
 $ionicon-social-twitter: "\f243";
+$ionicon-resume: "";
 
 .#{$ionicons-prefix}flickr:before {
   content: $ionicon-android-camera;
@@ -80,4 +81,7 @@ $ionicon-social-twitter: "\f243";
 }
 .#{$ionicons-prefix}twitter:before {
   content: $ionicon-social-twitter;
+}
+.#{$ionicons-prefix}resume:before {
+  content: $ionicon-resume;
 }

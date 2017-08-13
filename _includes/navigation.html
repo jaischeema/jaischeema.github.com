@@ -8,6 +8,13 @@
         </a>
       </li>
     {% endif %}
+    {% if site.resume_enabled == true %}
+      <li>
+        <a href="{{ 'resume' | relative_url }}" title=" My CV">
+          <span class="icon icon-resume"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" rel="noreferrer noopener" target="_blank" title="Twitter">

@@ -8,6 +8,7 @@ blog_theme: light
 # Optional settings
 
 about_enabled: true
+resume_enabled: true
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
