@@ -3,3 +3,65 @@ layout: blank
 title: "Resume"
 description: ""
 ---
+<div class="resume__container">
+  <header class="resume__header">
+    <div class="resume__header__name">
+      <h1>{{ site.data.resume.name }}</h1>
+      <h4>{{ site.data.resume.tagline }}</h4>
+    </div>
+    <div class="resume__header__contact">
+      <ul class="resume__header__contact__options">
+        <li>
+          <a href="mailto:{{ site.data.resume.contact.email }}" title="Email">
+            <i class="icon icon-email"></i>
+            <span class="text">{{ site.data.resume.contact.email }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:{{ site.data.resume.contact.phone }}" title="Email">
+            <i class="icon icon-email"></i>
+            <span class="text">{{ site.data.resume.contact.phone }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.url }}" title="Web Home">
+            <i class="icon icon-email"></i>
+            <span class="text">{{ site.url }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.data.resume.contact.github }}" title="Github">
+            <i class="icon icon-github"></i>
+            <span class="text">{{ site.data.resume.contact.github }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <article class="resume__content">
+    <section class="resume__content__section">
+      <h2 class="resume__content__section__header">Experience</h2>
+      {% for experience in site.data.resume.experiences %}
+      {% include resume_item.html data=experience %}
+      {% endfor %}
+    </section>
+    <section class="resume__content__section">
+      <h2 class="resume__content__section__header">Projects</h2>
+      {% for project in site.data.resume.projects %}
+      {% include resume_item.html data=project %}
+      {% endfor %}
+    </section>
+    <section class="resume__content__section">
+      <h2 class="resume__content__section__header">Education</h2>
+      {% for education in site.data.resume.education %}
+      {% include resume_item.html data=education %}
+      {% endfor %}
+    </section>
+    <section class="resume__content__section">
+      <h2 class="resume__content__section__header">Skills</h2>
+    </section>
+    <section class="resume__content__section">
+      <h2 class="resume__content__section__header">References</h2>
+    </section>
+  </article>
+</div>

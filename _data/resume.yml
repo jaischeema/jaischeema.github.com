@@ -1,0 +1,37 @@
+name: Jais Cheema
+tagline: Full Stack Developer
+contact:
+  email: sayhi@jaischeema.com
+  phone: +61 430 486 333
+  github: jaischeema
+outline: 'Predominately self-taught and always eager to learn. I appreciate the hands on approach to gain knowledge and have a range of experiences from core business applications such as online stores, logistics backends to iOS apps and games. I thrive in environments which allow me to grow as a person and a developer.  Experimenting with new technology in my personal projects also helps advance my skills.'
+experiences:
+  -
+    title: Trike Apps Pty Ltd
+    subtitle: Senior Team Lead / Senior Developer
+    period: May 2013 - Present
+    content: 'I have worked on many projects while working here. Some of the highlights of my time are:'
+    highlights:
+      - Created gems for interacting with various third party APIs.
+      - Upgraded Rails 2 application to Rails 3 with accompanying Ruby upgrade.
+      - Introduced Elm
+  -
+    title: CyberSecure Pty Ltd
+    subtitle: Technical Support Engineer
+    period: March 2011 - May 2013
+    content: 'First contact of technical support and any internal system issues. Created internal business and technical processes to keep up with the  growth and learnt Rails in the process.'
+    highlights:
+      - New website design - Rails 3 application
+      - Rewrite of the billing script
+      - Integrate the RT ticketing system with rest of the system
+education:
+  -
+    title: Bachelors of Information Technology
+    subtitle: RMIT University, Melbourne
+    period: Graduated July 2010
+    content: 'Majored in Application Programming'
+    highlights:
+      - High Achievement award for all three years of study.
+      - Listed on the vice-chancellor's list in the year of Graduation
+      - Cumulative GPA of 4.0
+      - International student scholarship

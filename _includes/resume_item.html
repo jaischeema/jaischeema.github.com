@@ -1,0 +1,25 @@
+<div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      {{ include.data.title }}
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      {{ include.data.period }}
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>{{ include.data.subtitle }}</h4>
+  </div>
+  {% if include.data.content %}
+    <div class="resume__content__section__item__content">
+      {{ include.data.content }}
+    </div>
+  {% endif %}
+  {% if include.data.highlights %}
+    <ul class="resume__content__section__item__highlights">
+      {% for highlight in include.data.highlights %}
+        <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
