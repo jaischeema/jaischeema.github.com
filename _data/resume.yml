@@ -4,27 +4,37 @@ contact:
   email: sayhi@jaischeema.com
   phone: +61 430 486 333
   github: jaischeema
-outline: 'Predominately self-taught and always eager to learn. I appreciate the hands on approach to gain knowledge and have a range of experiences from core business applications such as online stores, logistics backends to iOS apps and games. I thrive in environments which allow me to grow as a person and a developer.  Experimenting with new technology in my personal projects also helps me advance my skills.'
+outline:
+  I am proactively improving my skills, trying new things and have the general eagerness to learn.
+  Most of my current skills started off in the personal projects and have been predominately
+  self-taught. I love experimenting with new things and figuring out what I can bring back from
+  these experiments into my regular projects. I appreciate the hands on approach to gain knowledge
+  and have a range of experiences from core business applications such as online stores, logistics
+  backends to iOS apps and games. I am a people person and like to work with others to achieve
+  good things. I always look to learn from co-workers and get feedback to improve my own processes.
 experiences:
   -
     title: Trike Apps Pty Ltd
-    subtitle: Team Lead / Web Developer
+    subtitle: Team Lead / Senior Developer
     period: May 2013 &ndash; Present
-    content: 'In my time here, I have worked with many Ruby on Rails applications. Have been involved in building a web store from the ground up and maintaining and adding features to a high traffic project.'
+    content: 'In my time here, I have worked with many Ruby on Rails applications, including building a web store from the ground up. At TrikeApps, I mentored and lead the developement team for a high traffic project.'
     highlights:
-      - Lead the development team for <a href="http://radiopaedia.org">Radiopaedia.org</a>
+      - Organised upcoming work and managed the team of developers including remote personal.
+      - Regular communications with the project owners to convert business requirements into feature requirements.
       - Created gems for interacting with various third party APIs.
-      - Complex Rails application upgrade from Rails version 2 to version 3.
-      - Mentored developers learning Elm
+      - Migrated a large Rails application from Rails version 2 to version 3.
+      - Mentored other developers, guided learning for Elm.
+      - Fast and quality feature delivery rate.
   -
     title: CyberSecure Pty Ltd
     subtitle: Technical Support Engineer
     period: March 2011 &ndash; May 2013
-    content: 'First point of contact for technical support and any internal system issues. Created internal business and technical processes to keep up with the growth and learnt Rails in the process.'
+    content: 'First point of contact for technical support and internal systems. Created business and technical processes to keep up with the growth and learnt Rails in the process.'
     highlights:
-      - New website design - Rails 3 application
-      - Rewrite of the billing script to make it more modular and add new components
-      - Integrate the RT ticketing system with rest of the system
+      - Migrated the old website from PHP scripts to a Rails application
+      - Built the customer support request archive to help with common problems
+      - Refactored the billing system to be modular, extended it with new payment system.
+      - Integrated the RT ticketing system with rest of the system, created a gem for it.
 projects:
   -
     title: <a href="http://nickle.money">Nickle</a>
@@ -32,40 +42,41 @@ projects:
     period: Jan 2016 &ndash; In beta
     content: Based on the concepts from <a href="http://ledger-cli.org/">Ledger CLI</a> text based accounting software, created to make it easy for common people to reap the benefits of an amazing system.
     highlights:
-      - Did the design and development
-      - Intuitive UI
-      - Yearly rollovers for transactions
-      - Scheduled transactions
-      - Stripe based subscription system
-      - Frontend written in Elm, backend is a Rails 5 application
+      - <strong>Contribution:</strong> Design, Development and Marketing
+      - <strong>Stack:</strong> Rails 5 and Elm
+      - Built it for personal use, extended to make it sellable.
+      - Implemented budgeting based on the expenses from the previous time periods.
   -
     title: Seep
     subtitle: Strategy card game
     period: Dec 2013 &ndash; Ongoing
     content: Strategy based multiplayer card game backed by GameCenter on iOS. Started off as a learning project to get familiar with iOS development, current version is written in Swift and is currently in beta.
     highlights:
-      - Worked on the design and development
-      - Swift 4 codebase
-      - Turn based game backed by GameCenter
+      - <strong>Contribution:</strong> Design and Development
+      - <strong>Stack:</strong> Swift 4, SpriteKit, GameCenter
+      - Implemented distributed architecture to handle turn based games.
+      - Coded complex logic to validate all the player moves.
+      - Currently working on adding <strong>vs Computer</strong> mode.
   -
     title: Kaato
     subtitle: iOS Music player
     period: Aug 2015 &ndash; Jan 2017
     content: A simple music player with ability to cache the music once played, search for new music and create playlists.
     highlights:
-      - Experience in bringing an application full circle from development to deployment on App Store.
-      - Swift 3 codebase
-      - Backed by Realm mobile database
+      - <strong>Contribution:</strong> Design, Development, Deployment
+      - <strong>Stack:</strong> Swift 3, Realm, AVFoundation
+      - Brought this application full circle from development to deployment on App Store.
+      - Implemented the ability to cache the streaming data.
+      - Implemented advertising with Google AdSense.
   -
     title: <a href="http://expenses.jaischeema.com">Codex</a>
     subtitle: Shared expense management system
     period: Sept 2013 &ndash; Ongoing
     content: Originally built to manage the splits for a shared household, this has since then been developed to accomodate multiple groups. Allows summarising expenses at arbitrary intervals and grouping the summaries.
     highlights:
-      - Allow users to add and manage their expenses
-      - Multiple groups per user
-      - Rails 5 application
-      - Group summaries to calculate overall balances for the users.
+      - <strong>Stack:</strong> Rails 5
+      - Implemented to make the monthly task of summaring shared expenses easier.
+      - Currenly being used by 5 different groups with minimal support needed, closed to public.
 education:
   -
     title: Bachelors of Information Technology

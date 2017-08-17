@@ -41,6 +41,10 @@ body_class: 'resume'
   </header>
   <article class="resume__content">
     <section class="resume__content__section">
+      <h2 class="resume__content__section__header">About me</h2>
+      <div class="resume__content__section__item__content">{{ site.data.resume.outline }}</div>
+    </section>
+    <section class="resume__content__section">
       <h2 class="resume__content__section__header">Experience</h2>
       {% for experience in site.data.resume.experiences %}
         {% include resume_item.html data=experience %}
