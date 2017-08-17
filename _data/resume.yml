@@ -5,26 +5,29 @@ contact:
   phone: +61 430 486 333
   github: jaischeema
 outline:
-  I am proactively improving my skills, trying new things and have the general eagerness to learn.
-  Most of my current skills started off in the personal projects and have been predominately
-  self-taught. I love experimenting with new things and figuring out what I can bring back from
-  these experiments into my regular projects. I appreciate the hands on approach to gain knowledge
-  and have a range of experiences from core business applications such as online stores, logistics
-  backends to iOS apps and games. I am a people person and like to work with others to achieve
-  good things. I always look to learn from co-workers and get feedback to improve my own processes.
+  I am proactively improving my skills, trying new things and have a general
+  eagerness to learn.  Most of my current skills started off in personal
+  projects and have been predominately self-taught. I love experimenting and
+  figuring out what I can bring back from these experiments into my regular
+  projects. I appreciate a hands on approach to gain knowledge and have a range
+  of experiences from core business applications such as online stores and
+  logistics backends to iOS apps and games. I consider myself a people person
+  and love to work with others to achieve the best solution to the problem at
+  hand. I always look to learn from co-workers and gather feedback to improve
+  my own processes.
 experiences:
   -
     title: Trike Apps Pty Ltd
     subtitle: Team Lead / Senior Developer
     period: May 2013 &ndash; Present
-    content: 'In my time here, I have worked with many Ruby on Rails applications, including building a web store from the ground up. At TrikeApps, I mentored and lead the developement team for a high traffic project.'
+    content: 'In my time here, I have worked with many Ruby on Rails applications, including building a web store from the ground up. At Trike Apps, I mentored and lead the development team for a high traffic project.'
     highlights:
-      - Organised upcoming work and managed the team of developers including remote personal.
+      - Organised upcoming work and managed a team of developers including remote personnel.
       - Regular communications with the project owners to convert business requirements into feature requirements.
       - Created gems for interacting with various third party APIs.
       - Migrated a large Rails application from Rails version 2 to version 3.
       - Mentored other developers, guided learning for Elm.
-      - Fast and quality feature delivery rate.
+      - Fast feature delivery rate at a consistently high quality.
   -
     title: CyberSecure Pty Ltd
     subtitle: Technical Support Engineer
@@ -75,8 +78,8 @@ projects:
     content: Originally built to manage the splits for a shared household, this has since then been developed to accomodate multiple groups. Allows summarising expenses at arbitrary intervals and grouping the summaries.
     highlights:
       - <strong>Stack:</strong> Rails 5
-      - Implemented to make the monthly task of summaring shared expenses easier.
-      - Currenly being used by 5 different groups with minimal support needed, closed to public.
+      - Implemented to make the monthly task of summarising shared expenses easier.
+      - Currently being used by 5 different groups with minimal support needed, closed to public.
 education:
   -
     title: Bachelors of Information Technology
@@ -97,5 +100,5 @@ references:
       period: +61 412 122 797
     -
       title: Michael Webb
-      subtitle: Manager at <b>TrikeApps</b>
+      subtitle: Manager at <b>Trike Apps</b>
       period: +61 422 452 866
