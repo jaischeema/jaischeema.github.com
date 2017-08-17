@@ -2,67 +2,123 @@
 // Resume
 // =============================================================================
 
-$primaryColor: darkorchid;
+$primaryColor: #4CAC9D;
+$secondaryColor: #3D8A7E;
+$textColor: #545E6C;
+$bodyBackground: #f5f5f5;
+$boxShadowColor: rgba(0, 0, 0, 0.1);
 
 .resume {
-  &__container {
-    max-width: 900px;
-    margin: 0px auto;
+  font-family: 'Roboto', 'sans-serif';
+  background-color: $bodyBackground;
+  color: $textColor;
+  font-size: 14px;
+  line-height: 1.5;
 
-    @media (min-width: 901px) {
-      margin: 20px auto;
-      border: 1px solid #eee;
-      box-shadow: 0px 2px 7px #ddd;
-    }
-
-    a {
-      color: $primaryColor;
-      text-decoration: none;
-    }
+  a {
+    color: $primaryColor;
+    text-decoration: none;
   }
 
-  &__header, &__content {
-    padding: 30px;
+  &__container {
+    max-width: 960px;
+    margin: 0px auto;
+    background: white;
+
+    @media (min-width: 961px) {
+      margin: 20px auto;
+      box-shadow: 0px 2px 4px $boxShadowColor;
+    }
   }
 
   &__header {
-    padding-bottom: 10px;
-    background-color: #eee;
+    background-color: $primaryColor;
+
+    &__name {
+      padding: 30px 30px 10px;
+      h1 {
+        color: white;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
 
     &__contact {
-
       &__options {
-        padding: 0;
+        background-color: #3d8a7e;
+        padding: 10px 30px;
+        overflow: auto;
         list-style: none;
-        display: flex;
-        justify-content: space-between;
+
+        li {
+          float: left;
+          margin-right: 20px;
+
+          a {
+            color: white;
+            font-size: 14px;
+
+            i.icon {
+              font-weight: bold;
+              color: #073c3c;
+            }
+          }
+        }
       }
     }
   }
 
   &__content {
+    padding: 30px;
+
     &__section {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
 
       &__header {
         text-transform: uppercase;
         font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px;
+        font-weight: 500;
+        color: #1a675b;
+        margin-top: 0;
+        margin-bottom: 20px;
       }
 
       &__item {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         &__headerRow {
           display: flex;
 
           &__title {
             flex: 1;
+            color: #3F4650;
+            font-size: 16px;
+            font-weight: 500;
           }
 
           &__subtitle {
             align-self: center;
+            color: #97AAC3;
+            font-size: 14px;
           }
+        }
+
+        &__secondaryRow h4 {
+          color: #97AAC3;
+          font-size: 14px;
+        }
+
+        &__content {
+          margin-bottom: 5px;
         }
       }
     }

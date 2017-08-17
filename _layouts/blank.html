@@ -17,7 +17,7 @@
     {% include stylesheet.html path="dark" %}
   {% endif %}
 </head>
-<body>
+<body class="{{ page.body_class }}">
   {{ content }}
   {% include javascripts.html %}
 </body>

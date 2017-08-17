@@ -44,7 +44,10 @@ $ionicon-social-github: "\f233";
 $ionicon-social-linkedin: "\f239";
 $ionicon-social-rss: "\f23d";
 $ionicon-social-twitter: "\f243";
-$ionicon-resume: "";
+$ionicon-resume: "\f12e";
+$ionicon-resume-email: "\f10f";
+$ionicon-resume-phone: "\f219";
+$ionicon-resume-web: "\f276";
 
 .#{$ionicons-prefix}flickr:before {
   content: $ionicon-android-camera;
@@ -84,4 +87,13 @@ $ionicon-resume: "";
 }
 .#{$ionicons-prefix}resume:before {
   content: $ionicon-resume;
+}
+.#{$ionicons-prefix}resume-email:before {
+  content: $ionicon-resume-email;
+}
+.#{$ionicons-prefix}resume-phone:before {
+  content: $ionicon-resume-phone;
+}
+.#{$ionicons-prefix}resume-web:before {
+  content: $ionicon-resume-web;
 }
