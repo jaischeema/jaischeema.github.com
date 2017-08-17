@@ -40,7 +40,7 @@ experiences:
       - Integrated the RT ticketing system with rest of the system, created a gem for it.
 projects:
   -
-    title: <a href="http://nickle.money">Nickle</a>
+    title: <a href="https://nickle.money">Nickle</a>
     subtitle: Double entry accounting system
     period: Jan 2016 &ndash; In beta
     content: Based on the concepts from <a href="http://ledger-cli.org/">Ledger CLI</a> text based accounting software, created to make it easy for common people to reap the benefits of an amazing system.
@@ -72,7 +72,7 @@ projects:
       - Implemented the ability to cache the streaming data.
       - Implemented advertising with Google AdSense.
   -
-    title: <a href="http://expenses.jaischeema.com">Codex</a>
+    title: <a href="https://expenses.jaischeema.com">Codex</a>
     subtitle: Shared expense management system
     period: Sept 2013 &ndash; Ongoing
     content: Originally built to manage the splits for a shared household, this has since then been developed to accomodate multiple groups. Allows summarising expenses at arbitrary intervals and grouping the summaries.
