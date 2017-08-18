@@ -95,6 +95,8 @@ $boxShadowColor: rgba(0, 0, 0, 0.1);
 
       &__item {
         margin-bottom: 30px;
+        page-break-inside: avoid;
+
         &__headerRow {
           display: flex;
 

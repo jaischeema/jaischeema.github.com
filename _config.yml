@@ -10,7 +10,7 @@ blog_theme: light
 about_enabled: true
 resume_enabled: false
 discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
+ga_analytics: 'UA-27359508-1'
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
