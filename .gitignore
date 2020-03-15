@@ -9,6 +9,4 @@ Thumbs.db
 /_assets/yarn/
 /_site/
 /.asset-cache/
-Gemfile.lock
-yarn.lock
-.jekyll-cache/
+/.jekyll-cache/
