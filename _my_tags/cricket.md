@@ -1,4 +1,0 @@
----
-slug: cricket
-name: Cricket
----

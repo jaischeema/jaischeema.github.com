@@ -1,39 +1,75 @@
----
-layout: blank
-title: "Resume"
-description: ""
-body_class: 'resume'
----
-<div class="resume__container">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Jais Cheema | Resume</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Resume">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaischeema.com/resume">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Jais Cheema">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://jaischeema.com/resume">
+  <meta name="twitter:title" content="Resume">
+  <meta name="twitter:description" content="">
+
+  
+    <meta property="og:image" content="https://jaischeema.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="https://jaischeema.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="https://jaischeema.com/feed.xml" type="application/rss+xml" rel="alternate" title="Jais Cheema Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a257b31df943b35ad4623d2725fde5e03a63958e455092aaf271311734f2d70f.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+      <link rel="stylesheet" type="text/css" href="/assets/light-c53c366f2ce8ef2f81dc0a993db1cb52874f72329b7800212c7bf25c78d4b4e8.css">
+    
+
+  
+
+</head>
+
+<body class="resume">
+  <div class="resume__container">
   <header class="resume__header">
     <div class="resume__header__name">
-      <h1>{{ site.data.resume.name }}</h1>
-      <h4>{{ site.data.resume.tagline }}</h4>
+      <h1>Jais Cheema</h1>
+      <h4>Full Stack Developer</h4>
     </div>
     <div class="resume__header__contact">
       <ul class="resume__header__contact__options">
         <li>
-          <a href="mailto:{{ site.data.resume.contact.email }}" title="Email">
+          <a href="mailto:sayhi@jaischeema.com" title="Email">
             <i class="icon icon-resume-email"></i>
-            <span class="text">{{ site.data.resume.contact.email }}</span>
+            <span class="text">sayhi@jaischeema.com</span>
           </a>
         </li>
         <li>
-          <a href="tel:{{ site.data.resume.contact.phone }}" title="Email">
+          <a href="tel:+61 430 486 333" title="Email">
             <i class="icon icon-resume-phone"></i>
-            <span class="text">{{ site.data.resume.contact.phone }}</span>
+            <span class="text">+61 430 486 333</span>
           </a>
         </li>
         <li>
-          <a href="{{ site.data.resume.contact.website }}" title="Web Home">
+          <a href="https://jaischeema.com" title="Web Home">
             <i class="icon icon-resume-web"></i>
-            <span class="text">{{ site.data.resume.contact.website }}</span>
+            <span class="text">https://jaischeema.com</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/{{ site.data.resume.contact.github }}" title="Github">
+          <a href="https://github.com/jaischeema" title="Github">
             <i class="icon icon-github"></i>
-            <span class="text">{{ site.data.resume.contact.github }}</span>
+            <span class="text">jaischeema</span>
           </a>
         </li>
       </ul>
@@ -42,39 +78,292 @@ body_class: 'resume'
   <article class="resume__content">
     <section class="resume__content__section">
       <h2 class="resume__content__section__header">About me</h2>
-      <div class="resume__content__section__item__content">{{ site.data.resume.outline }}</div>
+      <div class="resume__content__section__item__content">I am proactively improving my skills, trying new things and have a general eagerness to learn.  Most of my current skills started off in personal projects and have been predominately self-taught. I love experimenting with new things and figuring out what I can bring back from these experiments into my regular projects. I appreciate a hands on approach to gain knowledge and have a range of experiences from core business applications such as online stores and logistics backends to iOS apps and games. I consider myself a people person and love to work with others to achieve the best solution to the problem at hand. I always look to learn from co-workers and gather feedback to improve my own processes.</div>
     </section>
     <section class="resume__content__section">
       <h2 class="resume__content__section__header">Experience</h2>
-      {% for experience in site.data.resume.experiences %}
-        {% include resume_item.html data=experience %}
-      {% endfor %}
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      Trike Apps Pty Ltd
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      May 2013 &ndash; Present
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>Team Lead / Senior Developer</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      In my time here, I have worked with many Ruby on Rails applications, including building a web store from the ground up. At Trike Apps, I mentored and lead the development team for a high traffic project.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li>Organised upcoming work and managed a team of developers including remote personnel.</li>
+      
+        <li>Regular communications with the project owners to convert business requirements into feature requirements.</li>
+      
+        <li>Created gems for interacting with various third party APIs.</li>
+      
+        <li>Migrated a large Rails application from Rails version 2 to version 3.</li>
+      
+        <li>Mentored other developers, guided learning for Elm.</li>
+      
+        <li>Fast feature delivery rate at a consistently high quality.</li>
+      
+    </ul>
+  
+</div>
+
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      CyberSecure Pty Ltd
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      March 2011 &ndash; May 2013
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>Technical Support Engineer</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      First point of contact for technical support and internal systems. Created business and technical processes to keep up with the growth and learnt Rails in the process.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li>Migrated the old website from PHP scripts to a Rails application</li>
+      
+        <li>Built the customer support request archive to help with common problems</li>
+      
+        <li>Refactored the billing system to be modular, extended it with new payment system.</li>
+      
+        <li>Integrated the RT ticketing system with rest of the system, created a gem for it.</li>
+      
+    </ul>
+  
+</div>
+
+      
     </section>
     <section class="resume__content__section">
       <h2 class="resume__content__section__header">Projects</h2>
-      {% for project in site.data.resume.projects %}
-        {% include resume_item.html data=project %}
-      {% endfor %}
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      <a href="https://nickle.money">Nickle</a>
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      Jan 2016 &ndash; In beta
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>Double entry accounting system</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      Based on the concepts from <a href="http://ledger-cli.org/">Ledger CLI</a> text based accounting software, created to make it easy for common people to reap the benefits of an amazing system.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li><strong>Contribution:</strong> Design, Development and Marketing</li>
+      
+        <li><strong>Stack:</strong> Rails 5 and Elm</li>
+      
+        <li>Built it for personal use, extended to make it sellable.</li>
+      
+        <li>Implemented budgeting based on the expenses from the previous time periods.</li>
+      
+    </ul>
+  
+</div>
+
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      Seep
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      Dec 2013 &ndash; Ongoing
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>Strategy card game</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      Strategy based multiplayer card game backed by GameCenter on iOS. Started off as a learning project to get familiar with iOS development, current version is written in Swift and is currently in beta.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li><strong>Contribution:</strong> Design and Development</li>
+      
+        <li><strong>Stack:</strong> Swift 4, SpriteKit, GameCenter</li>
+      
+        <li>Implemented distributed architecture to handle turn based games.</li>
+      
+        <li>Coded complex logic to validate all the player moves.</li>
+      
+        <li>Currently working on adding <strong>vs Computer</strong> mode.</li>
+      
+    </ul>
+  
+</div>
+
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      Kaato
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      Aug 2015 &ndash; Jan 2017
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>iOS Music player</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      A simple music player with ability to cache the music once played, search for new music and create playlists.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li><strong>Contribution:</strong> Design, Development, Deployment</li>
+      
+        <li><strong>Stack:</strong> Swift 3, Realm, AVFoundation</li>
+      
+        <li>Brought this application full circle from development to deployment on App Store.</li>
+      
+        <li>Implemented the ability to cache the streaming data.</li>
+      
+        <li>Implemented advertising with Google AdSense.</li>
+      
+    </ul>
+  
+</div>
+
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      <a href="https://expenses.jaischeema.com">Codex</a>
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      Sept 2013 &ndash; Ongoing
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>Shared expense management system</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      Originally built to manage the splits for a shared household, this has since then been developed to accomodate multiple groups. Allows summarising expenses at arbitrary intervals and grouping the summaries.
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li><strong>Stack:</strong> Rails 5</li>
+      
+        <li>Implemented to make the monthly task of summarising shared expenses easier.</li>
+      
+        <li>Currently being used by 5 different groups with minimal support needed, closed to public.</li>
+      
+    </ul>
+  
+</div>
+
+      
     </section>
     <section class="resume__content__section">
       <h2 class="resume__content__section__header">Education</h2>
-      {% for education in site.data.resume.education %}
-        {% include resume_item.html data=education %}
-      {% endfor %}
+      
+        <div class="resume__content__section__item">
+  <div class="resume__content__section__item__headerRow">
+    <h3 class="resume__content__section__item__headerRow__title">
+      Bachelors of Information Technology
+    </h3>
+    <h4 class="resume__content__section__item__headerRow__subtitle">
+      Graduated July 2010
+    </h4>
+  </div>
+  <div class="resume__content__section__item__secondaryRow">
+    <h4>RMIT University, Melbourne</h4>
+  </div>
+  
+    <div class="resume__content__section__item__content">
+      Majored in Application Programming
+    </div>
+  
+  
+    <ul class="resume__content__section__item__highlights">
+      
+        <li>High Achievement award for all three years of study.</li>
+      
+        <li>Listed on the vice-chancellor's list in the year of Graduation</li>
+      
+        <li>Cumulative GPA of 4.0</li>
+      
+        <li>International student scholarship</li>
+      
+    </ul>
+  
+</div>
+
+      
     </section>
     <section class="resume__content__section">
       <h2 class="resume__content__section__header">References</h2>
-      {% if site.data.resume.references.enabled %}
-        {% for reference in site.data.resume.references.values %}
-          {% include resume_item.html data=reference %}
-        {% endfor %}
-      {% else %}
+      
         <div class="resume__content__section__item__headerRow">
           <h4 class="resume__content__section__item__headerRow__subtitle">
             Available on request
           </h4>
         </div>
-      {% endif %}
+      
     </section>
   </article>
 </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27359508-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-27359508-1');
+  </script>
+
+
+<script src="/assets/vendor-2c224c53eb697c739f9490c38819a72184f09472739fd9e492272ef174090428.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-ba7dac4993ba4b98835135ab5d1a12756c136ce176c50dfa554099d5ce683752.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+</body>
+</html>
