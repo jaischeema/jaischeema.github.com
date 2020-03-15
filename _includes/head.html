@@ -1,11 +1,5 @@
-{% if page.thumb_image %}
-  {% if page.thumb_image contains '://' %}
-    {% assign thumb_image = page.thumb_image %}
-  {% else %}
-    {% assign thumb_image = page.thumb_image | asset_path | absolute_url %}
-  {% endif %}
-{% endif %}
 <head>
+  <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ site.name }} | {{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
@@ -16,28 +10,57 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  {% if thumb_image %}
-  <meta property="og:image" content="{{ thumb_image }}">
-  {% endif %}
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  {% if thumb_image %}
-  <meta property="twitter:image" content="{{ thumb_image }}">
+
+  {% if page.thumb_image %}
+    {% if page.thumb_image contains '://' %}
+      <meta property="og:image" content="{{ page.thumb_image }}">
+      <meta name="twitter:image" content="{{ page.thumb_image }}">
+    {% else %}
+      <meta property="og:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+      <meta name="twitter:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+    {% endif %}
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
+    <meta name="twitter:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
   {% endif %}
 
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.local_fonts %}
-    {% include stylesheet.html path="fonts" %}
+    {% asset fonts.css %}
   {% endif %}
 
-  {% if site.blog_theme == "light" %}
-    {% include stylesheet.html path="light" %}
+  {% if site.theme_toggle == true %}
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="true">
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="false">
+    {% endif %}
+
   {% else %}
-    {% include stylesheet.html path="dark" %}
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      {% asset light.css %}
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      {% asset dark.css %}
+    {% endif %}
+
   {% endif %}
+
 </head>

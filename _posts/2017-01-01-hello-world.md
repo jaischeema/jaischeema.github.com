@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Yet another first blog post
+description: ""
 tags: [social]
 ---
 

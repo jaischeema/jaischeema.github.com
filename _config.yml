@@ -8,23 +8,28 @@ blog_theme: light
 # Optional settings
 
 about_enabled: true
-resume_enabled: false
-discus_identifier: # Add your Disqus identifier
 ga_analytics: 'UA-27359508-1'
-local_fonts: false # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
-scrollappear_enabled: true # Change to false to disable
+discus_identifier:
+local_fonts: false
+rss_enabled: true
+scrollappear_enabled: true
+tag_nav_enabled: false
+theme_toggle: false
 social:
   github: jaischeema
+  linkedin: jais-cheema-79400724
   twitter: jaischeema
   email: sayhi@jaischeema.com
 
+# Important settings (change at own risk)
+
 assets:
-  features:
-    automatic_img_size: false
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
   sources:
-    - _assets/fonts
-    - _assets/images
+    - _assets/icons
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
@@ -46,12 +51,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+  - package-lock.json
   - README.md
   - vendor/
   - yarn.lock
 plugins:
   - jekyll-assets
-  - jekyll-haml
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji

@@ -2,6 +2,7 @@
 title: My development setup
 tags: [programming]
 layout: post
+description: ""
 published: false
 ---
 

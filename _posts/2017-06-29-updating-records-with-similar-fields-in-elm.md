@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Updating records with similar fields in Elm
+description: ""
 tags: [programming, elm]
 ---
 

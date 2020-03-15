@@ -106,6 +106,10 @@ a {
   }
 }
 
+svg {
+  transition: fill 0.2s linear;
+}
+
 ul,
 ol {
   padding-left: 40px;
@@ -143,6 +147,12 @@ img {
   display: block;
   max-width: 100%;
   margin: 0;
+}
+
+.notfound-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 ::selection {
